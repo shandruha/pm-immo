@@ -81,7 +81,7 @@ def second_task_opt(a_1, b_1, c_1, d_1, a_2, b_2, c_2, d_2, x_0, T, n_points, r_
         return delta
 
     # Находим минимум функции с заданным уровнем погрешности
-    minimize(f, method='CG', x0=r[-1], tol=eps)
+    minimize(f, method='Nelder-Mead', x0=r[-1], tol=eps)
         
     return t, x, u, psi
 
